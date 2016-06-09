@@ -111,22 +111,7 @@ class PostController extends Controller
         
         return view('posts.full_article',['post'=>$post]);
     }
-
-    // public function full()
-    // {
-    //     $post = Post::findOrFail(1);
-
-    //     return view('posts.full_article',['post'=>$post]);
-    // }
-
-    // public function full($id)
-    // {
-    //     $post = Post::findOrFail($id);
-
-    //     $post->views++;
-    //     $post->save();
-    //     return view('posts.full_article',['post'=>$post]);
-    // }
+    
 
     /**
      * Show the form for editing the specified resource.
