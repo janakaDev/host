@@ -72,16 +72,20 @@ body {
 
  
 /* this is for the news ticker */
-.video-list-thumbs{}
+.video-list-thumbs{
+
+
+}
 .video-list-thumbs > li{
     margin-bottom:12px;
+    background-color: red;
 }
 .video-list-thumbs > li:last-child{}
 .video-list-thumbs > li > a{
   display:block;
   position:relative;
   background-color: #111;
-  color: #fff;
+ /* color: #fff; */
   padding: 8px;
  
     transition:all 500ms ease-in-out;
@@ -93,7 +97,7 @@ body {
 }
 .video-list-thumbs h2{
   bottom: 0;
-  font-size: 14px;
+  font-size: 10px;
   height: 33px;
   margin: 8px 0 0;
 }
@@ -505,4 +509,8 @@ figure.effect-lily a:hover img{
   border-left-color: #CCC;
   letter-spacing: 0px;
 }
+
+/*888888888888888888888888888888888888888888888888888888888888888
+888888888888888888888888888888888888888888
+888888888888*/
 

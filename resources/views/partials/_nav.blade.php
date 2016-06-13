@@ -1,8 +1,9 @@
-<div class=" navbar-wrapper ">
+{{ Html::script('css/marquee.js') }}
+
 <div class="header-top">
 <div class="row">    
 <div class="col-md-12">
-<nav class=" navbar navbar-default navbar-fixed navbar-inverse ">
+<nav class=" navbar navbar-default">
         <div >
             <div class="navbar-header">
 
@@ -91,6 +92,8 @@
 
     </div>
     
+
+
 
     </nav>
     </div>

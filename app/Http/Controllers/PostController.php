@@ -58,7 +58,7 @@ class PostController extends Controller
     {
         //validate
         $imageTempName = $request->file('file')->getPathname();
-                $imageName = $request->file('file')->getClientOriginalName();
+        $imageName = $request->file('file')->getClientOriginalName();
         
 
 
@@ -85,6 +85,7 @@ class PostController extends Controller
         $post->title= $request->title;
         $post->body= $request->body;
         $post->image_url=$request->file;
+        $post->video_url= $request->video_url;
         $post->save();
        
         //redirect
@@ -94,6 +95,9 @@ class PostController extends Controller
         DB::table('posts')
             ->where('image_url', $imageTempName)
             ->update(['image_url' => $imageName]);
+
+           
+        return view('home');
     }
 
     /**

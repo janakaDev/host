@@ -14,6 +14,9 @@
 
 
     			{{ Form::file('file',null,array('class'=> 'form-control')) }}
+    			
+    			{{ Form::label('title','Video url:') }}
+    			{{ Form::text('video_url',null,array('class' =>'form-control')) }}
 
     			{{ Form::submit('Create Post',array('class' => 'btn btn-success btn-lg btn-block')) }}
 

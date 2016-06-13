@@ -18,8 +18,8 @@
   <ul class="list-unstyled video-list-thumbs row">
   <li >
     <a href="#" title="UTI Video Text">
-      <img src="{!! url('images/'.$barPost->image_url) !!}" alt="img" class="img-responsive" height="130px" />
-      <h2>{{$barPost->title}}</h2>
+      <img src="{!! url('images/'.$barPost->image_url) !!}" alt="img" class="img-responsive"  />
+      <h2 >{{$barPost->title}}</h2>
       <span class="glyphicon glyphicon-play-circle"></span>
       <span class="duration">03:15</span>
     </a>

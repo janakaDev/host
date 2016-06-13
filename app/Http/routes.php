@@ -24,16 +24,15 @@ Route::group(['middleware'=>['web']],function(){
 	Route::get('/home', 'HomeController@index');	
 
 	
-	Route::get('/', function () {
-	    return view('welcome');
+	Route::get('/', function () {    return view('welcome');
 	});
 
-	Route::get('/fullArticle/{id}','PostController@show');
+	Route::get('/fullArticle/{id}','ArticleController@show');
 	
-	Route::get('/create','PostController@store');
-	Route::post('upload','PostController@upload');
+//	Route::get('/create','PostController@store');
+//	Route::post('upload','PostController@upload');
 
-
+	Route::resource('posts','PostController');
 	
 
 

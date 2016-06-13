@@ -14,14 +14,14 @@
       <div class="carousel-inner" style="border: 5px solid;">
        <?php $i = 0; ?>
         @foreach( $queries as $query )
-            <div style="background-color: black;" class="item @if($i === 0) {{ 'active' }} @endif">
+            <div class="item @if($i === 0) {{ 'active' }} @endif">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-3"><img src="{!! url('images/'.$query->image_url) !!}" class="img-responsive" style="max-width: 300px;max-height: 250px;"></div>
                          <?php $i++; ?>
                         <div class="col-md-9">
-                            <h2 style="color:white;">{{$query->title}}</h2>
-                            <p>{{substr($query->body,1,500)}}."...."</p>
+                            <h2 style="color:black;">{{$query->title}}</h2>
+                            <p>{!! substr($query->body,0,630) !!}."...."</p>
                             <div
                             class="source-section first-section first-lower-section subscribe"
                             id="viewMore">
@@ -47,7 +47,7 @@
                   
                   <li data-target="#custom_carousel" data-slide-to="0" class="@if($i2 ===0) {{ 'active' }} @endif" >
 
-                  <a href="#"><img class="img-responsive pull-left" src="{!! url('images/'.$query->image_url) !!}" style="max-width: 50px;max-height: 50px;"><small class="content">{{$query->title}}</small></a></li> 
+                  <a href="#"><img class="img-responsive pull-left" src="{!! url('images/'.$query->image_url) !!}" style="max-width: 50px;max-height: 50px;"><small class="content">{!! substr($query->title,0,330) !!}</small></a></li> 
             @endforeach
             </ul>
         </div>

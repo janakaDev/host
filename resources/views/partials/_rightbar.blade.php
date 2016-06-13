@@ -55,5 +55,9 @@
              <div class="hr-primary" />  
                                       
 </ul>
+<div style="padding-left:45px;">
+   
+    <script type="text/javascript" src="http://www.cricwaves.com/cricket/widgets/script/scoreWidgets.js"></script>
+</div>
 </div>
        

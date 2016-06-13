@@ -44,10 +44,12 @@
 
 				
 				<div class="media-body" >
-					<h4 class="media-content">
+
 						<img id="imgMain" class="media-object img-responsive pull-left "src="{!! url('images/'.$post->image_url) !!}" alt="not displayed" style="padding-right: 10px; max-width: 300px;max-height: 300px;padding-bottom:10px;">
 						
-							{{substr($post->body,0,100)}}
+					<h4 class="media-content">		
+
+						{!! substr($post->body,0,600) !!}
 					
 					</h4>
 

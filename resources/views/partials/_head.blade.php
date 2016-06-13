@@ -31,4 +31,5 @@
 
     {{ Html::style('css/styles.css') }}
     {{ Html::script('js/custom.js') }}
+    {{ Html::script('js/marquee.js') }}
    </head>
