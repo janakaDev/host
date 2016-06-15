@@ -11,6 +11,7 @@
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
     {{ Html::script('js/custom.js') }}
     
+    <script type="text/javascript" src="js/jquery.floating-social-share.js"></script>
   	
 
   	<script>
@@ -23,6 +24,7 @@
 		});
 </script>
 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57618a93aece0be1"></script>
 
 </body>
 

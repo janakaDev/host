@@ -5,6 +5,7 @@
   $posts = Post::all();
 ?>
 <hr id="hr">
+
 @foreach($posts as $post)
 <div id="mainDiv" style="padding-top: 10px;">
 
@@ -24,22 +25,12 @@
 							</div> -->
 						</div>
 					</div>
-					<div class="col-md-7">
-						<h2 class="media-heading" style="padding-left: 10px;">
+					<div class="col-md-10">
+						<h3 class="media-heading" style="padding-left: 10px;">
 							<a href="fullArticle/{{$post->id}}">  {{$post->title}} </a>
-						</h2>
+						</h3>
 					</div>
-					<div class="col-md-3">
-
-						<a href="http://facebook.com"
-							class="btn btn-social-icon btn-facebook"> <i
-							class="fa fa-facebook"></i></a> <a
-							class="btn btn-social-icon btn-google-plus"><i
-							class="fa fa-google-plus"></i></a> <a
-							class="btn btn-social-icon btn-twitter"><i
-							class="fa fa-twitter"></i></a>
-
-					</div>
+					
 				</div>
 
 				
@@ -103,4 +94,11 @@
 
 	</div>
 	<hr id="hr">
+	
+</script>
 	@endforeach
+
+	
+
+
+

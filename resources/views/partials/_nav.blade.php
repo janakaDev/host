@@ -1,9 +1,11 @@
 {{ Html::script('css/marquee.js') }}
-
+<style type="text/css">
+    
+</style>
 <div class="header-top">
 <div class="row">    
 <div class="col-md-12">
-<nav class=" navbar navbar-default">
+<nav class=" navbar navbar-default" style="margin-top: -2em;">
         <div >
             <div class="navbar-header">
 
@@ -17,7 +19,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    newsLanka
+                    <span style="padding-right: 5px;" class="glyphicon glyphicon-home"></span>newsLanka
                 </a>
             </div>
 
@@ -25,12 +27,10 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ url('contactus') }}">Contact Us</a></li>
+                  
+                    
                 </ul>
-
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
@@ -65,15 +65,9 @@
                     <button type="button" class="btn btn-default">Movies</button>
                     <button type="button" class="btn btn-default">Sports</button>
                     <button type="button" class="btn btn-default">Politics</button>
-                    <button type="button" class="btn btn-default">Fashion</button>
-                    <button type="button" class="btn btn-default">Movies</button>
-                    <button type="button" class="btn btn-default">Sports</button>
-                    <button type="button" class="btn btn-default">Politics</button>
-                    <button type="button" class="btn btn-default">Fashion</button>
-                    <button type="button" class="btn btn-default">Movies</button>
-                    <button type="button" class="btn btn-default">Sports</button>
-                    <button type="button" class="btn btn-default">Politics</button>
-                    <button type="button" class="btn btn-default">Sports</button>
+                    <button type="button" class="btn btn-default">Religous</button>
+                    <button type="button" class="btn btn-default">Cricket</button>
+                    <button type="button" class="btn btn-default">other</button>
                     
                   </div>
                 </div>

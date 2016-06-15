@@ -17,8 +17,11 @@ class CreatePostsTable extends Migration
             $table->string('title');
             $table->text('body');
             $table->string('image_url');
+            $table->string('carousel_url');
             $table->string('video_url');
             $table->integer('views');
+            $table->string('category');
+
             $table->timestamps();
         });
     }

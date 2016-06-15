@@ -14,7 +14,7 @@
 </style>
 <!-- popular video articles-->
 @foreach($leftBarPosts as $barPost)
-<div style="padding-left: 20px; padding-top: 20px; ">
+<div style="padding-left:20px; padding-top: 20px; ">
   <ul class="list-unstyled video-list-thumbs row">
   <li >
     <a href="#" title="UTI Video Text">
@@ -29,24 +29,7 @@
 @endforeach
 <!-- popular video articles-->
 
-
-
-
-
-
-
-
-
-
-
 <div style="padding-top:10px; padding-left:10px">
-
-    <div class="panel panel-default">
-      <div class="panel-body">
-
-      </div>
-      <div class="panel-footer">Panel footer</div>
-    </div>
 <ul class="ppost_nav" style="padding-top:10px; padding-left:10px" >
           
           
@@ -70,6 +53,11 @@
             </li>  
            @endforeach
              <div class="hr-primary" />  
-                                      
+                                  
 </ul>
+
 </div>
+
+
+
+   

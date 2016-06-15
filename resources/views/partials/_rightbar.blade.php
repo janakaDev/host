@@ -8,20 +8,27 @@
   $result=Post::orderBy('created_at', 'desc')->first()->image_url;
   $result1=Post::orderBy('created_at', 'desc')->first()->title;
   $result2=Post::orderBy('created_at', 'desc')->first()->body;
+  $result3=Post::orderBy('created_at', 'desc')->first()->id;
 ?>
 
 
 <div style="padding-top: 20px; padding-right:15px;">
-<div >
+
           <div class="thumbnail">
-           <img id="imgMain" class="media-object img-responsive pull-left "src="{!! url('images/'.$result) !!}" alt="not displayed" style="max-width: 250px;max-height: 250px;">
-              <div class="caption">
-                <h4 style="color:#6495ED"><span class="glyphicon glyphicon-th-large"></span>{!!$result1!!}</h4>
-                <p>{!!$result2!!}</p>
-                <a href="#" class="btn btn-default btn-xs pull-right" role="button"><i class="glyphicon glyphicon-edit"></i></a> <a href="#" class="btn btn-info btn-xs" role="button"><span class="glyphicon glyphicon-thumbs-up"></span>Button</a> <a href="#" class="btn btn-default btn-xs" role="button">Button</a>
+           <img id="imgMain" class="media-object img-responsive pull-left "src="{!! url('images/'.$result) !!}" alt="not displayed" style="max-width: 290px;max-height: 250px;">
+              <div class="caption29">
+               <a href=""fullArticle/{{$result3}}""> <h4 style="color:#6495ED;padding-top: 20px;"><span class="glyphicon glyphicon-th-large"></span>{!!$result1!!}</h4></a>
+
+
+                <p>{!!substr($result2,1,500)!!}</p>
+                
+
+                <a href="fullArticle/{{$result3}}" class="btn btn-info btn-xs" role="button"><span ></span>Read More</a> 
+
+               
             </div>
           </div>
-</div>
+
 
 
 
@@ -59,5 +66,9 @@
    
     <script type="text/javascript" src="http://www.cricwaves.com/cricket/widgets/script/scoreWidgets.js"></script>
 </div>
+
+
+
+
+
 </div>
-       

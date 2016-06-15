@@ -33,7 +33,7 @@ Route::group(['middleware'=>['web']],function(){
 //	Route::post('upload','PostController@upload');
 
 	Route::resource('posts','PostController');
-	
+	Route::get('contactus',function(){return view('partials._contactus');});
 
 
 });

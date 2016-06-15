@@ -12,9 +12,23 @@
     			{{ Form::label('body','Post Body')}}
     			{{ Form::textarea('body',null,array('class'=> 'form-control')) }}
 
-
+                {{ Form::label('title','image url') }}
     			{{ Form::file('file',null,array('class'=> 'form-control')) }}
-    			
+
+               {{ Form::select('category', array(
+                    'fasion' => 'fasion',
+                    'sports' => 'sports',
+                    'movies' => 'movies',
+                    'cricket' => 'cricket',
+                    'politics' => 'politics',
+                    'religious' => 'religious',
+                    'other' => 'other',
+                ),array('class'=> 'form-control'))}}
+
+
+                {{ Form::label('title','carousel url') }}
+                {{ Form::file('file1',null,array('class'=> 'form-control')) }}
+	
     			{{ Form::label('title','Video url:') }}
     			{{ Form::text('video_url',null,array('class' =>'form-control')) }}
 

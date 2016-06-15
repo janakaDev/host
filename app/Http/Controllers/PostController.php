@@ -59,11 +59,10 @@ class PostController extends Controller
         //validate
         $imageTempName = $request->file('file')->getPathname();
         $imageName = $request->file('file')->getClientOriginalName();
-        
+        $imageTempName1 = $request->file('file1')->getPathname();
+        $imageName1 = $request->file('file1')->getClientOriginalName();
 
 
-
-        
         if(Input::hasFile('file'))
         {
                 
@@ -72,7 +71,20 @@ class PostController extends Controller
                 
                 
         }
-        $path = Input::file('file')->getRealPath();
+         $path = Input::file('file')->getRealPath();
+
+
+// this is for 2nd fikle
+       
+        if(Input::hasFile('file1'))
+        {
+                
+                $file1 = Input::file('file1');
+                $file1->move('images',$file1->getClientOriginalName());
+                
+                
+        }
+        $path2 = Input::file('file1')->getRealPath();
         $this->validate($request, array(
                 'title'=>'required|max:255',
                 'body'=>'required'
@@ -84,7 +96,9 @@ class PostController extends Controller
 
         $post->title= $request->title;
         $post->body= $request->body;
+        $post->category= $request->category;
         $post->image_url=$request->file;
+        $post->carousel_url=$request->file1;
         $post->video_url= $request->video_url;
         $post->save();
        
@@ -95,7 +109,9 @@ class PostController extends Controller
         DB::table('posts')
             ->where('image_url', $imageTempName)
             ->update(['image_url' => $imageName]);
-
+         DB::table('posts')
+            ->where('carousel_url', $imageTempName1)
+            ->update(['carousel_url' => $imageName1]);
            
         return view('home');
     }
