@@ -1,4 +1,4 @@
-{{ Html::script('css/marquee.js') }}
+
 <style type="text/css">
     
 </style>

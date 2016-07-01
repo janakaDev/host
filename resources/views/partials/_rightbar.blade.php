@@ -11,7 +11,8 @@
   $result3=Post::orderBy('created_at', 'desc')->first()->id;
 ?>
 
-
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_horizontal_follow_toolbox"></div>
 <div style="padding-top: 20px; padding-right:15px;">
 
           <div class="thumbnail">

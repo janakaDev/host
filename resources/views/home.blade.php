@@ -5,6 +5,7 @@
   
 
 <div class="row">
+
 @include('partials.carouselsALL')
     <div class="col-md-2" >
        

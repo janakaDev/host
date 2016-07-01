@@ -12,6 +12,10 @@
   }
 
 </style>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+
 <!-- popular video articles-->
 @foreach($leftBarPosts as $barPost)
 <div style="padding-left:20px; padding-top: 20px; ">
